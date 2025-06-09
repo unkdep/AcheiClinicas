@@ -1,0 +1,307 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo do site */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    flex: 1; /* Isso faz com que o container principal ocupe o espaço restante disponível */
+}
+
+  /* Seção de contato no topo */
+  .contato {
+    background-color: #006400; /* Verde escuro */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .telefone {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #3a6a47; /* Verde médio */
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header .container {
+    width: 80%; /* Reduzindo a largura da área de conteúdo */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  header .logo a {
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo .lupa {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  /* Menu Desktop */
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #25d366;
+  }
+  
+  /* Banner da página de contato */
+  .banner {
+    background-image: url('img/fundobanner5.png'); /* Fundo para a seção */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .banner-text h1 {
+    font-size: 50px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .banner-text p {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  
+  /* Seção de formulário de contato */
+  .formulario-contato {
+    background-color: #fff;
+    padding: 30px 5%; /* Menor altura e menos largura */
+    max-width: 600px; /* Limita o tamanho do formulário */
+    margin: 30px auto; /* Centraliza o formulário */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario-contato h2 {
+    font-size: 24px; /* Tamanho de título reduzido */
+    margin-bottom: 15px; /* Menos espaço abaixo do título */
+  }
+  
+  .campo {
+    margin-bottom: 10px; /* Menos espaço entre os campos */
+  }
+  
+  .campo label {
+    display: block;
+    font-size: 14px; /* Fonte menor */
+    margin-bottom: 5px;
+  }
+  
+  .campo input, .campo textarea {
+    width: 100%;
+    padding: 8px; /* Menos padding */
+    font-size: 14px; /* Tamanho de fonte menor */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .campo textarea {
+    resize: vertical;
+    height: 80px; /* Menor altura para o textarea */
+  }
+  
+  /* Botão de envio */
+  .btn-enviar {
+    background-color: #006400;
+    color: white;
+    padding: 8px 15px; /* Botão mais compacto */
+    font-size: 14px; /* Fonte menor no botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Menos espaço acima do botão */
+  }
+  
+  .btn-enviar:hover {
+    background-color: #25d366;
+  }
+  
+  /* Estilos para a nova seção de contato */
+.contato-nos {
+    background-color: #a9b0a97a; /* Cor de fundo suave */
+    color: #333;
+    padding: 30px 10%;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+
+.contato-nos h2 {
+    font-size: 32px; /* Tamanho maior para o título */
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #252e258f; /* Cor verde */
+}
+
+.contato-nos p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif; /* Melhor fonte */
+}
+
+.contato-nos a {
+    font-weight: bold;
+    font-size: 20px;
+    color: #135c2d; /* Cor do link para combinar com o WhatsApp */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.contato-nos a:hover {
+    color: #128C7E; /* Cor verde escuro quando passar o mouse */
+}
+  /* Estilo para o ícone de WhatsApp */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px;  /* Distância da parte direita da tela */
+    z-index: 9999; /* Garantir que o ícone fique sobre outros elementos */
+    display: inline-block;
+    border-radius: 50%; /* Garante o formato circular */
+    background-color: transparent; /* Remover qualquer fundo */
+    padding: 5px; /* Ajuste no padding para reduzir o círculo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra do ícone */
+}
+
+.whatsapp-icon img {
+    width: 40px; /* Diminuir o tamanho do ícone */
+    height: 40px; /* Diminuir o tamanho do ícone */
+    border-radius: 50%; /* Garantir que a imagem fique redonda */
+    object-fit: cover; /* Assegura que a imagem se ajuste corretamente */
+}
+
+.whatsapp-icon:hover {
+    background-color: #128c7e; /* Cor de fundo ao passar o mouse */
+}
+
+  
+footer {
+    background-color: #3a6a47;  /* Mantivemos a cor original */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+    margin-top: auto; /* Garante que o rodapé vá para o final da página */
+}
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+  /* Rodapé */
+  footer {
+      font-size: 14px; /* Diminui o tamanho da fonte do rodapé */
+      padding: 15px 0; /* Ajusta o padding para o rodapé no mobile */
+  }
+}
+@media (max-width: 768px) {
+  /* Ajustar o tamanho da fonte do texto "Estamos aqui para..." */
+  .banner-text p {
+    font-size: 18px; /* Tamanho de fonte reduzido para a versão mobile */
+  }
+
+  /* Media Queries para Mobile */
+@media (max-width: 768px) {
+  /* Ajustar o tamanho da fonte do texto "Estamos aqui para..." */
+  .banner-text p {
+    font-size: 18px; /* Tamanho de fonte reduzido para a versão mobile */
+  }
+  
+  /* Ajustes gerais para o footer no mobile */
+  footer {
+      font-size: 14px; /* Diminui o tamanho da fonte do rodapé */
+      padding: 15px 0; /* Ajusta o padding para o rodapé no mobile */
+  }
+  
+  /* Outros ajustes que você pode já ter feito... */
+  .formulario-contato {
+    padding: 20px 10%; /* Ajusta o padding no formulário */
+  }
+
+  .contato-nos p {
+    font-size: 16px; /* Ajusta o tamanho da fonte do parágrafo */
+  }
+
+  .contato-nos h2 {
+    font-size: 24px; /* Ajuste do título no mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajusta o tamanho do título "Entre em Contato" */
+  .banner-text h1 {
+    font-size: 30px; /* Tamanho reduzido para o título */
+  }
+
+  /* Ajusta o tamanho do subtítulo "Estamos aqui para responder às suas dúvidas e fornecer mais informações!" */
+  .banner-text p {
+    font-size: 16px; /* Tamanho reduzido para o subtítulo */
+  }
+
+  /* Outros ajustes que você já fez ou que podem ser necessários */
+  footer {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajusta o tamanho da fonte dos itens do menu */
+  header nav ul li a {
+    font-size: 12px; /* Tamanho ainda menor para os links no menu */
+  }
+
+  /* Ajusta o tamanho do logo "Achei Clínicas" */
+  header .logo a {
+    font-size: 20px; /* Tamanho ainda menor para o texto do logo */
+  }
+
+  /* Ajusta o tamanho da imagem da lupa */
+  header .logo .lupa {
+    width: 30px; /* Diminuir ainda mais o tamanho da imagem */
+    height: 30px; /* Diminuir ainda mais o tamanho da imagem */
+  }
+ }
+}
