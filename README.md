@@ -1,4 +1,4 @@
-Achei Clínicas 🏥
+🏥 Achei Clínicas 🏥
 
 • AcheiClínicas é uma plataforma simples e intuitiva que facilita a busca rápida e eficiente por clínicas médicas na sua região. Ideal para quem quer encontrar serviços de saúde com agilidade e praticidade.
 
@@ -51,5 +51,7 @@ Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais deta
 4. No terminal, execute:
 
 git add README.md
+
 git commit -m "Atualiza README com descrição e link"
+
 git push
