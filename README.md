@@ -32,8 +32,8 @@ Observação: O projeto é 100% estático, sem necessidade de servidor local ou 
 
 🌐 Deploy
 
-Acesse a versão online no GitHub Pages:
-👉 https://unkdep.github.io/AcheiClinicas
+Acesse a versão online no Netlify:  
+👉 [https://acheiclinicas.netlify.app/](https://acheiclinicas.netlify.app/)
 
 
 
