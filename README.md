@@ -43,7 +43,9 @@ Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais de
 3. Salve (Ctrl + S)  
 4. No terminal, execute:
 
+```bash
 git add README.md
 git commit -m "Atualiza README com descrição e link"
 git push
+
 
